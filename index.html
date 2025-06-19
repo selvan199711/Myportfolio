@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thamilchselvan Kethareswaran – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f0f2f5;
+      --card-bg: #ffffff;
+      --primary: #0056b3;
+      --text: #333333;
+      --shadow: 0 6px 18px rgba(0,0,0,.1);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg,#e9eff9 0%,#f9fcff 100%);
+      color: var(--text);
+      padding: 40px 20px;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--primary);
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    section {
+      background: var(--card-bg);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    section h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 8px 16px;
+    }
+    ul li::before {
+      content: "•";
+      color: var(--primary);
+      margin-right: 6px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      position: relative;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background: var(--primary);
+      transition: width .3s;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+      font-size: .9rem;
+      margin-top: 40px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="photo.jpg" alt="Thamilchselvan Kethareswaran">
+      <h1>Thamilchselvan Kethareswaran</h1>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a Web Development student at Humber College, passionate about crafting smooth, user-focused web experiences. I switched to tech to solve real-world problems with code and thrive on projects that stretch my abilities. Adaptable, detail-driven, and always learning, I enjoy collaborating in modern, agile environments.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript &nbsp;•&nbsp; React</li>
+        <li>Python</li>
+        <li>HTML5 &nbsp;•&nbsp; CSS3 &nbsp;•&nbsp; Responsive Design</li>
+        <li>Firebase &nbsp;•&nbsp; MySQL (basic)</li>
+        <li>Git &amp; GitHub</li>
+        <li>VS Code &nbsp;•&nbsp; Android Studio</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Social Links</h2>
+      <ul>
+        <li><a href="https://github.com/selvan199711" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/selvan199711" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>Projects will appear here soon as I build and refine them throughout the course.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:thamilselvan199711@gmail.com">thamilselvan199711@gmail.com</a></p>
+      <p>Location: Brampton, Ontario, Canada</p>
+    </section>
+
+    <footer>
+      &copy; 2025 Thamilchselvan Kethareswaran
+    </footer>
+  </div>
+</body>
+</html>
